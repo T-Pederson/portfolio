@@ -10,7 +10,10 @@ export default function Footer() {
           </a>
           . All Rights Reserved.
         </span>
-        <p className="text-sm text-gray-500 sm:text-center dark:text-gray-400">Built using <a href="https://react.dev/">React</a> and <a href="https://tailwindcss.com/">Tailwind</a>.</p>
+        <p className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          Built using <a className="hover:opacity-50 text-sky-500 transition-all duration-200" href="https://react.dev/">React</a> and{" "}
+          <a className="hover:opacity-50 text-sky-500 transition-all duration-200" href="https://tailwindcss.com/">Tailwind</a>.
+        </p>
       </div>
     </footer>
   );
