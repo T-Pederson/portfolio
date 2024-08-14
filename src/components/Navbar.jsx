@@ -7,7 +7,7 @@ export default function Navbar() {
         <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img
             src={headshot}
-            className="h-32 rounded-full"
+            className="h-20 rounded-full md:h-32"
             alt="Tyson Pederson headshot"
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
@@ -54,7 +54,7 @@ export default function Navbar() {
                 href="#"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                Projects
+                About
               </a>
             </li>
             <li>
@@ -62,7 +62,7 @@ export default function Navbar() {
                 href="#"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
-                About
+                Projects
               </a>
             </li>
             <li>
