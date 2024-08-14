@@ -1,4 +1,5 @@
 import headshot from "../assets/headshot.jpg";
+import 'flowbite';
 
 export default function Navbar() {
   return (
