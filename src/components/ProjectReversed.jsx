@@ -9,8 +9,8 @@ export default function ProjectReversed({
 }) {
   return (
     <section className="py-8 bg-white md:py-16 dark:bg-gray-900 antialiased">
-      <div className="max-w-screen-xl px-4 mx-auto 2xl:px-0">
-        <div className="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16">
+      <div className="max-w-screen-xl mx-auto 2xl:px-0">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16 justify-items-end">
           <div className="mt-6 sm:mt-8 lg:mt-0">
             <h1 className="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">
               {title}
@@ -70,7 +70,7 @@ export default function ProjectReversed({
               {description}
             </p>
           </div>
-          <div className="shrink-0 max-w-md lg:max-w-lg mx-auto">
+          <div className="shrink-0 max-w-md lg:max-w-lg ">
             <img className="w-full rounded-md" src={image} alt={alt} />
           </div>
         </div>

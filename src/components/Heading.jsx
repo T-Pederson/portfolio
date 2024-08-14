@@ -9,7 +9,7 @@ export default function Heading() {
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             Software Engineer & Web Developer
           </h2>
-          <p className="mb-4">I love to build websites!</p>
+          <p className="mb-4">I love to build fun and great looking websites!</p>
           <p>
             I&apos;m from Las Vegas, NV, currently studying Computer Science remotely at Oregon State University. Anticipated Graduation Dec. 2024.
           </p>
