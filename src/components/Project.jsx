@@ -23,7 +23,7 @@ export default function Project({
             <h1 className="text-xl font-semibold text-gray-900 sm:text-3xl">
               {title}
             </h1>
-            <div className="mt-6 sm:gap-4 sm:items-center sm:flex sm:mt-8">
+            <div className="my-6 sm:gap-4 sm:items-center sm:flex sm:my-8">
               <a
                 href={codeLink}
                 className="flex items-center justify-center py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-300 focus:z-10 focus:ring-4 focus:ring-gray-100 transition-all duration-200 w-36"
@@ -72,9 +72,8 @@ export default function Project({
                 Live Preview
               </a>
             </div>
-            <hr className="my-6 md:my-8 border-gray-300 border" />
-            <p className="mb-6 text-gray-500">{overview}</p>
-            <p className="mb-6 text-gray-500">{description}</p>
+            <p className="mb-6">{overview}</p>
+            <p>{description}</p>
           </div>
         </div>
       </div>
