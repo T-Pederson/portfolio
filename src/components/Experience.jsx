@@ -46,52 +46,58 @@ const experience = [
 
 export default function Experience() {
   return (
-    <div className="max-w-7xl mx-auto text-gray-500" id="experience">
-      <div className="max-w-2xl lg:mx-0">
-        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
-          Experience
-        </h2>
-        <p className="mb-4">
-          I have been a part of some amazing teams, and look forward to the next
-          opportunity!
-        </p>
-        <hr className="my-6 md:my-8 border-gray-300 border" />
-      </div>
-      <div className="grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-gray-300 lg:max-w-none lg:grid-cols-3">
-        {experience.map((role) => (
-          <article
-            key={role.id}
-            className="flex max-w-80 flex-col items-start justify-between"
-          >
-            <div className="flex items-center gap-x-4 text-xs">
-              <span>{role.date}</span>
-            </div>
-            <div className="group relative">
-              <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900">
-                <p>
-                  <span className="absolute inset-0" />
-                  {role.title}
-                </p>
-              </h3>
-              <div className="relative mt-8 flex items-center gap-x-4">
-                <img alt="" src={role.company.imageSrc} className="h-10 w-10" />
-                <div className="text-sm leading-6">
-                  <p className="font-semibold text-gray-900">
-                    <a href={role.company.href}>
-                      <span className="absolute inset-0" />
-                      {role.company.name}
-                    </a>
-                  </p>
-                  <p>{role.company.division}</p>
-                </div>
+    <section id="experience">
+      <div className="items-center max-w-screen-xl mx-auto text-gray-500">
+        <div>
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
+            Experience
+          </h2>
+          <p className="mb-4">
+            I have been a part of some amazing teams, and look forward to the
+            next opportunity!
+          </p>
+          <hr className="my-6 md:my-8 border-gray-300 border" />
+        </div>
+        <div className="grid grid-cols-1 gap-x-8 gap-y-16 border-gray-300 lg:grid-cols-3">
+          {experience.map((role) => (
+            <article
+              key={role.id}
+              className="flex max-w-80 flex-col items-start justify-between"
+            >
+              <div className="flex items-center gap-x-4 text-xs">
+                <span>{role.date}</span>
               </div>
-              <p className="mt-5 line-clamp-3 text-sm leading-6">
-                {role.description}
-              </p>
-            </div>
-          </article>
-        ))}
+              <div className="group relative">
+                <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900">
+                  <p>
+                    <span className="absolute inset-0" />
+                    {role.title}
+                  </p>
+                </h3>
+                <div className="relative mt-8 flex items-center gap-x-4">
+                  <img
+                    alt=""
+                    src={role.company.imageSrc}
+                    className="h-10 w-10"
+                  />
+                  <div className="text-sm leading-6">
+                    <p className="font-semibold text-gray-900">
+                      <a href={role.company.href}>
+                        <span className="absolute inset-0" />
+                        {role.company.name}
+                      </a>
+                    </p>
+                    <p>{role.company.division}</p>
+                  </div>
+                </div>
+                <p className="mt-5 line-clamp-3 text-sm leading-6">
+                  {role.description}
+                </p>
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
