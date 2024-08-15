@@ -1,5 +1,6 @@
 import trimble from "../assets/trimble.png";
-import emerson from "../assets/emerson.png"
+import emerson from "../assets/emerson.png";
+import cura from "../assets/cura.png";
 
 const experience = [
   {
@@ -28,6 +29,19 @@ const experience = [
       imageSrc: emerson,
     },
   },
+  {
+    id: 3,
+    title: "Hackathon",
+    description:
+      "Our team created Cura, a Python CLI app where users cross-check their medications to confirm no negative interactions.",
+    date: "Jan 2023",
+    company: {
+      name: "Beaverhacks",
+      division: "Winter 2023 Hackathon",
+      href: "https://devpost.com/software/cura-28vym7?ref_content=user-portfolio&ref_feature=in_progress",
+      imageSrc: cura,
+    },
+  },
 ];
 
 export default function Experience() {
@@ -43,7 +57,7 @@ export default function Experience() {
             next opportunity!
           </p>
         </div>
-        <div className="mt-6 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t-2 border-gray-300 pt-6 sm:mt-8 sm:pt-8 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+        <div className="mt-6 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t-2 border-gray-300 pt-6 sm:mt-8 sm:pt-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {experience.map((role) => (
             <article
               key={role.id}
@@ -59,21 +73,25 @@ export default function Experience() {
                     {role.title}
                   </p>
                 </h3>
+                <div className="relative mt-8 flex items-center gap-x-4">
+                  <img
+                    alt=""
+                    src={role.company.imageSrc}
+                    className="h-10 w-10"
+                  />
+                  <div className="text-sm leading-6">
+                    <p className="font-semibold text-gray-900">
+                      <a href={role.company.href}>
+                        <span className="absolute inset-0" />
+                        {role.company.name}
+                      </a>
+                    </p>
+                    <p className="text-gray-600">{role.company.division}</p>
+                  </div>
+                </div>
                 <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
                   {role.description}
                 </p>
-              </div>
-              <div className="relative mt-8 flex items-center gap-x-4">
-                <img alt="" src={role.company.imageSrc} className="h-10 w-10" />
-                <div className="text-sm leading-6">
-                  <p className="font-semibold text-gray-900">
-                    <a href={role.company.href}>
-                      <span className="absolute inset-0" />
-                      {role.company.name}
-                    </a>
-                  </p>
-                  <p className="text-gray-600">{role.company.division}</p>
-                </div>
               </div>
             </article>
           ))}

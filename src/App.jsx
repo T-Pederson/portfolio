@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="px-4 py-8 sm:px-32 sm:py-14 grid gap-20 md:gap-32">
+    <div className="px-4 py-8 sm:px-32 sm:py-14 grid gap-32">
       <Navbar />
       <About />
       <Projects />

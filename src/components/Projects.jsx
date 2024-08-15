@@ -2,15 +2,16 @@ import Project from "./Project";
 import ProjectReversed from "./ProjectReversed";
 import runestock from "../assets/runestock.png";
 import lcdp from "../assets/lakes_country_detailing_plus.png";
+import pokememory from "../assets/pokememory.png";
 
 const projects = [
   {
     id: 1,
     title: "RuneStock",
     overview:
-      "A WebApp that provide real time pricing information on items in the online RPG Old School Runescape.",
+      "A WebApp that provides real time pricing info for items in the game Old School Runescape.",
     description:
-      "Get real time data such as current buy/sell prices, calculated margins, ROI, total potential profit, and more! Gain an edge over other players when trading items on the Grand Exchange and start building your empire today!",
+      "Get real time data on buy/sell prices, calculated margins, ROI, total potential profit, and more! Gain an edge over other players when trading items on the Grand Exchange and start building your empire today!",
     image: runestock,
     alt: "RuneStock home page",
     codeLink: "https://github.com/T-Pederson/RuneStock",
@@ -29,6 +30,19 @@ const projects = [
     codeLink: "https://github.com/T-Pederson/lakes_country_detailing_plus",
     previewLink: "http://lakescountrydetailing.com/",
     reversed: true,
+  },
+  {
+    id: 3,
+    title: "PokeMemory",
+    overview:
+      "A memory game based on Pokemon.",
+    description:
+      "Do you have what it takes to become a PokeMemory master? Click every Pokemon once, but be careful not to click a Pokemon you've already clicked or the game is over!",
+    image: pokememory,
+    alt: "PokeMemory home page home page",
+    codeLink: "https://github.com/T-Pederson/pokememory",
+    previewLink: "https://pokememory-tp.netlify.app/",
+    reversed: false,
   },
 ];
 
