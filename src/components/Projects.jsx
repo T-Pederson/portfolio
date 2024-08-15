@@ -34,8 +34,7 @@ const projects = [
   {
     id: 3,
     title: "PokeMemory",
-    overview:
-      "A memory game based on Pokemon.",
+    overview: "A memory game based on Pokemon.",
     description:
       "Do you have what it takes to become a PokeMemory master? Click every Pokemon once, but be careful not to click a Pokemon you've already clicked or the game is over!",
     image: pokememory,
@@ -49,11 +48,15 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects">
-      <div className="items-center max-w-screen-xl mx-auto">
-        <h2 className="mb-8 text-4xl tracking-tight font-extrabold text-gray-900">
+      <div className="items-center max-w-screen-xl mx-auto text-gray-500">
+        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
           Projects
         </h2>
-        <div className="grid gap-12 md:gap-24">
+        <p className="mb-4">
+          View the code on GitHub, or see the actual project website for yourself below!
+        </p>
+        <hr className="my-6 md:my-8 border-gray-300 border" />
+        <div className="mt-6 grid max-w-2xl gap-x-8 gap-y-16 border-gray-300 lg:max-w-none">
           {projects.map((project) => {
             if (project.reversed) {
               return (
