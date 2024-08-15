@@ -8,7 +8,7 @@ export default function Project({
   previewLink,
 }) {
   return (
-    <section className="py-8 md:py-16 antialiased">
+    <section className="antialiased">
       <div className="max-w-screen-xl mx-auto 2xl:px-0">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16">
           <div className="shrink-0 max-w-md lg:max-w-lg">

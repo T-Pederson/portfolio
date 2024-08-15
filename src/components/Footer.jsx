@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer>
-      <hr className="my-8 border-gray-300 border" />
+      <hr className="border-gray-300 border" />
       <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <span className="text-gray-500 sm:text-center">
           © 2024{" "}

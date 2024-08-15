@@ -8,9 +8,17 @@ export default function ProjectReversed({
   previewLink,
 }) {
   return (
-    <section className="py-8 md:py-16 antialiased">
+    <section className="antialiased">
       <div className="max-w-screen-xl mx-auto 2xl:px-0">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16 justify-items-end">
+          <div className="md:hidden shrink-0 max-w-md lg:max-w-lg">
+            <a
+              href={previewLink}
+              className="hover:opacity-60 hover:cursor-pointer transition-all duration-200"
+            >
+              <img className="w-full rounded-md" src={image} alt={alt} />
+            </a>
+          </div>
           <div className="mt-6 sm:mt-8 lg:mt-0">
             <h1 className="text-xl font-semibold text-gray-900 sm:text-3xl">
               {title}
@@ -71,7 +79,7 @@ export default function ProjectReversed({
           <div className="shrink-0 max-w-md lg:max-w-lg ">
             <a
               href={previewLink}
-              className="hover:opacity-60 hover:cursor-pointer transition-all duration-200"
+              className="hidden md:block hover:opacity-60 hover:cursor-pointer transition-all duration-200"
             >
               <img className="w-full rounded-md" src={image} alt={alt} />
             </a>

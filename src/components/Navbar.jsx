@@ -4,7 +4,7 @@ import "flowbite";
 export default function Navbar() {
   return (
     <nav>
-      <div className="max-w-screen-xl flex flex-col md:flex-row items-center mx-auto gap-4 px-4 pb-4">
+      <div className="max-w-screen-xl flex flex-col md:flex-row items-center mx-auto gap-4">
         <img
           src={headshot}
           className="h-20 rounded-full md:h-32"
@@ -20,7 +20,7 @@ export default function Navbar() {
               <a href="#projects">Projects</a>
             </li>
             <li className="hover:text-sky-500 hover:scale-105 transition-all duration-200">
-              <a href="#contact">Contact</a>
+              <a href="#experience">Experience</a>
             </li>
           </ul>
         </div>
