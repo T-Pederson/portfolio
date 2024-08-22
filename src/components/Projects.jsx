@@ -3,10 +3,24 @@ import ProjectReversed from "./ProjectReversed";
 import runestock from "../assets/runestock.png";
 import lcdp from "../assets/lakes_country_detailing_plus.png";
 import pokememory from "../assets/pokememory.png";
+import cycleblog from "../assets/cycleblog.png";
 
 const projects = [
   {
     id: 1,
+    title: "Cycle Blog",
+    overview:
+      "A full-stack web app to discuss all things cycling! React powered front end, Express and PostgreSQL powered back end.",
+    description:
+      "Anyone can visit the site to read posts and comments. Registered users can comment on posts. Authors can create and edit posts.",
+    image: cycleblog,
+    alt: "Cycle Blog home page",
+    codeLink: "https://github.com/T-Pederson/cycleBlog",
+    previewLink: "https://cycleblog-user.netlify.app/",
+    reversed: false,
+  },
+  {
+    id: 2,
     title: "RuneStock",
     overview:
       "A WebApp that provides real time pricing info for items in the game Old School Runescape.",
@@ -16,10 +30,10 @@ const projects = [
     alt: "RuneStock home page",
     codeLink: "https://github.com/T-Pederson/RuneStock",
     previewLink: "https://runestock.netlify.app/",
-    reversed: false,
+    reversed: true,
   },
   {
-    id: 2,
+    id: 3,
     title: "Lakes Country Detailing Plus",
     overview:
       "An information website for a local auto detailing business in Fergus Falls, MN.",
@@ -29,10 +43,10 @@ const projects = [
     alt: "Lakes Country Detailing Plus home page",
     codeLink: "https://github.com/T-Pederson/lakes_country_detailing_plus",
     previewLink: "http://lakescountrydetailing.com/",
-    reversed: true,
+    reversed: false,
   },
   {
-    id: 3,
+    id: 4,
     title: "PokeMemory",
     overview: "A memory game based on Pokemon.",
     description:
@@ -41,7 +55,7 @@ const projects = [
     alt: "PokeMemory home page home page",
     codeLink: "https://github.com/T-Pederson/pokememory",
     previewLink: "https://pokememory-tp.netlify.app/",
-    reversed: false,
+    reversed: true,
   },
 ];
 
