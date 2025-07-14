@@ -1,5 +1,5 @@
 import lcdp from "../assets/lakes_country_detailing_plus.png";
-import runestock from "../assets/runestock.png";
+import vidify from "../assets/vidify.png";
 
 export default function About() {
   return (
@@ -14,9 +14,9 @@ export default function About() {
           </p>
           <hr className="my-6 md:my-8 border-gray-300 border" />
           <p>
-            I&apos;m from Las Vegas, NV, currently studying Computer Science
-            remotely at Oregon State University. Anticipated Graduation Dec.
-            2024.
+            I&apos;m from Las Vegas, NV, currently working full-time as a
+            Software Engineer. I completed my Bachelors degree in Computer
+            Science at Oregon State University in December 2024.
           </p>
           <p className="mt-2">
             Find me on{" "}
@@ -55,13 +55,13 @@ export default function About() {
             />
           </a>
           <a
-            href="https://runestock.netlify.app/"
+            href="https://vidify-player.netlify.app/"
             className="hover:opacity-60 hover:cursor-pointer hover:scale-105 transition-all duration-200"
           >
             <img
               className="mt-4 w-full lg:mt-10 rounded-lg"
-              src={runestock}
-              alt="RuneStock home page"
+              src={vidify}
+              alt="Vidify player page"
             />
           </a>
         </div>

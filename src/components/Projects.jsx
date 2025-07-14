@@ -1,13 +1,27 @@
 import Project from "./Project";
 import ProjectReversed from "./ProjectReversed";
+import vidify from "../assets/vidify.png";
 import runestock from "../assets/runestock.png";
 import lcdp from "../assets/lakes_country_detailing_plus.png";
 import pokememory from "../assets/pokememory.png";
 import cycleblog from "../assets/cycleblog.png";
 
 const projects = [
-  {
+    {
     id: 1,
+    title: "Vidify",
+    overview:
+      "A full-stack web app that plays embedded YouTube videos corresponding to songs from a user's public Spotify playlists. React powered front end, Express and MongoDB powered back end.",
+    description:
+      "I've always enjoyed watching music videos on YouTube and curating playlists on Spotify, but I couldn't find a tool that seamlessly connected the two. To solve this, I built a web app that links a user's public Spotify playlists with corresponding YouTube music videos—combining the best of both platforms in one experience.",
+    image: vidify,
+    alt: "Vidify player page",
+    codeLink: "https://github.com/T-Pederson/Vidify",
+    previewLink: "https://vidify-player.netlify.app/",
+    reversed: false,
+  },
+  {
+    id: 2,
     title: "Cycle Blog",
     overview:
       "A full-stack web app to discuss all things cycling! React powered front end, Express and PostgreSQL powered back end.",
@@ -17,19 +31,6 @@ const projects = [
     alt: "Cycle Blog home page",
     codeLink: "https://github.com/T-Pederson/cycleBlog",
     previewLink: "https://cycleblog-user.netlify.app/",
-    reversed: false,
-  },
-  {
-    id: 2,
-    title: "RuneStock",
-    overview:
-      "A WebApp that provides real time pricing info for items in the game Old School Runescape.",
-    description:
-      "Get real time data on buy/sell prices, calculated margins, ROI, total potential profit, and more! Gain an edge over other players when trading items on the Grand Exchange and start building your empire today!",
-    image: runestock,
-    alt: "RuneStock home page",
-    codeLink: "https://github.com/T-Pederson/RuneStock",
-    previewLink: "https://runestock.netlify.app/",
     reversed: true,
   },
   {
@@ -47,6 +48,19 @@ const projects = [
   },
   {
     id: 4,
+    title: "RuneStock",
+    overview:
+      "A WebApp that provides real time pricing info for items in the game Old School Runescape.",
+    description:
+      "Get real time data on buy/sell prices, calculated margins, ROI, total potential profit, and more! Gain an edge over other players when trading items on the Grand Exchange and start building your empire today!",
+    image: runestock,
+    alt: "RuneStock home page",
+    codeLink: "https://github.com/T-Pederson/RuneStock",
+    previewLink: "https://runestock.netlify.app/",
+    reversed: true,
+  },
+  {
+    id: 5,
     title: "PokeMemory",
     overview: "A memory game based on Pokemon.",
     description:
@@ -55,7 +69,7 @@ const projects = [
     alt: "PokeMemory home page home page",
     codeLink: "https://github.com/T-Pederson/pokememory",
     previewLink: "https://pokememory-tp.netlify.app/",
-    reversed: true,
+    reversed: false,
   },
 ];
 

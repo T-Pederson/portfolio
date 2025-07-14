@@ -5,10 +5,23 @@ import cura from "../assets/cura.png";
 const experience = [
   {
     id: 1,
+    title: "Software Engineer",
+    description:
+      "Software Engineer focused on building a Shipper Integration microservice to enable API-based communication between Trimble software and external shipper systems, replacing legacy EDI transmissions.",
+    date: "Jan, 2025 - Current",
+    company: {
+      name: "Trimble Inc.",
+      division: "Transportation Enterprise",
+      href: "https://www.trimble.com/en",
+      imageSrc: trimble,
+    },
+  },
+  {
+    id: 2,
     title: "Software Engineer Intern",
     description:
       "Software Engineer Intern focused on UX regression testing and migrating tests from a legacy framework.",
-    date: "Jun, 2024 - Current",
+    date: "Jun, 2024 - Sept 2024",
     company: {
       name: "Trimble Inc.",
       division: "e-Builder",
@@ -17,7 +30,7 @@ const experience = [
     },
   },
   {
-    id: 2,
+    id: 3,
     title: "Software Engineer Intern",
     description:
       "Software Engineer Intern focused on creating device testing programs for hardware manufacturing QA.",
@@ -30,7 +43,7 @@ const experience = [
     },
   },
   {
-    id: 3,
+    id: 4,
     title: "Hackathon",
     description:
       "Our team created Cura, a Python CLI app where users cross-check their medications to confirm no negative interactions.",

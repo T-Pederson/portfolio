@@ -4,7 +4,7 @@ export default function Footer() {
       <hr className="border-gray-300 border mx-auto max-w-screen-xl" />
       <div className="mx-auto max-w-screen-xl mt-8 md:flex md:items-center md:justify-between text-gray-500">
         <span className="sm:text-center">
-          © 2024{" "}
+          © 2025{" "}
           <a href="#" className="hover:underline">
             Tyson Pederson
           </a>
